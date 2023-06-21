@@ -95,7 +95,7 @@ jobs:
       matrix:
         BRANCH:
           - edge
-          - current
+          # - current
 
     steps:
       - name: Import env
@@ -143,8 +143,8 @@ jobs:
       fail-fast: false
       matrix:
         BRANCH:
-          # - edge
-          - current
+          - edge
+          # - current
         RELEASE:
           # - focal # Ubuntu 20.04 LTS
           # - jammy # Ubuntu 22.04 LTS
@@ -156,7 +156,7 @@ jobs:
         TYPE:
           - minimal
           - cli
-          # - desktop
+          - desktop
         include:
           - TYPE: desktop
             DESKTOP_ENVIRONMENT: xfce
