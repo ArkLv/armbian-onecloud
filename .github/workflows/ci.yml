@@ -95,7 +95,7 @@ jobs:
       matrix:
         BRANCH:
           - edge
-          # - current
+          - current
 
     steps:
       - name: Import env
@@ -144,7 +144,7 @@ jobs:
       matrix:
         BRANCH:
           - edge
-          # - current
+          - current
         RELEASE:
           # - focal # Ubuntu 20.04 LTS
           # - jammy # Ubuntu 22.04 LTS
